@@ -6,8 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.pranaya.wisdomleaf.Utils.Resource
 import com.pranaya.wisdomleaf.Utils.Status
+import com.pranaya.wisdomleaf.Utils.Utils
 import com.pranaya.wisdomleaf.Utils.ViewModelFactory
 import com.pranaya.wisdomleaf.data.api.ApiHelperImpl
 import com.pranaya.wisdomleaf.data.api.RetrofitBuilder
@@ -58,6 +61,11 @@ class ListDashboardActivity : AppCompatActivity() {
     fun setupViewModel() {
         viewModel = ViewModelProvider(this,
         ViewModelFactory(ApiHelperImpl(RetrofitBuilder.apiService)))[ListDashboardViewModel::class.java]
+    }
+
+
+    fun onViewClick(view : View) {
+        Utils.showDialog(view.tag.toString(),view.context)
     }
 
 }
