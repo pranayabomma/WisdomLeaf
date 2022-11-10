@@ -12,9 +12,12 @@ import com.google.gson.annotations.SerializedName
   *url	:	https://unsplash.com/photos/du_OrQAA4r0
   *download_url	:	https://picsum.photos/id/22/4434/3729
 **/
-data class ImageData(@SerializedName("id") val id: Int,
+data class ImageData(@SerializedName("id") val id: String,
                      @SerializedName("author")val author: String,
                      @SerializedName("width")val width : Long,
                      @SerializedName("height")val heigh : Long,
                      @SerializedName("url")val url : String,
-                     @SerializedName("download_url")val downloadUrl : String)
+                     @SerializedName("download_url")val downloadUrl : String) {
+
+
+}

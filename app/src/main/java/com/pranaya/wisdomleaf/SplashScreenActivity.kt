@@ -8,10 +8,11 @@ import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
-class SplashScreenActivity : AppCompatActivity() {
+class
+SplashScreenActivity : AppCompatActivity() {
 
     companion object {
-        const val DURATION : Long = 5000
+        const val DURATION : Long = 1000
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
