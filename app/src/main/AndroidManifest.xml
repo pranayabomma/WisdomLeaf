@@ -11,7 +11,8 @@
         android:theme="@style/Theme.Wisdomleaf">
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Widget.Material3.MaterialCalendar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
